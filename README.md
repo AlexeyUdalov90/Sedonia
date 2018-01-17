@@ -1,1 +1,1 @@
-# Sedonia
+# Project of Sedonia
