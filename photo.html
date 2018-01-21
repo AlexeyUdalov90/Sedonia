@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Фото и видео</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+
+  <body class="page">
     <header class="page-header">
       <a href="#" class="page-header__logo">
         <img src="#" alt="Седона" class="page-header__logo-image" width="" height="">
@@ -37,83 +39,89 @@
         <span class="cover__text">Sedona</span>
         <img src="#" alt="Sedona" class="cover-inner__image" width="" height="">
       </div>
-      <header class="page-main__header">
-        <h1 class="page-main__title">Фото и видео</h1>
-        <p class="page-main__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      <header class="header-block page-main__header">
+        <h1 class="header-block__title">Фото и видео</h1>
+        <p class="header-block__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
       </header>
 
-      <section class="photo">
+      <section class="gallery">
         <h2 class="visually-hidden">Фотографии Седоны</h2>
-        <div class="photo__wrapper">
-          <ul class="photo__list">
-            <li class="photo__item photo__item--big">
-              <figure class="photo__box">
-                <img src="#" alt="" class="photo__img">
-                <figcaption class="photo__description">
-                  <div class="photo__text">
-                    <b class="photo__title"></b>
-                    <span class="photo__author"></span>
-                  </div>
-                  <div class="photo__likesum">
-                    <button class="button photo__like" type="button"></button>
-                    <span class="photo__sum"></span>
-                  </div>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="photo__item">
-              <figure class="photo__box">
-                <img src="#" alt="" class="photo__img">
-                <figcaption class="photo__description">
-                  <div class="photo__text">
-                    <b class="photo__title"></b>
-                    <span class="photo__author"></span>
-                  </div>
-                  <div class="photo__likesum">
-                    <button class="button photo__like" type="button"></button>
-                    <span class="photo__sum"></span>
-                  </div>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="photo__item">
-              <figure class="photo__box">
-                <img src="#" alt="" class="photo__img">
-                <figcaption class="photo__description">
-                  <div class="photo__text">
-                    <b class="photo__title"></b>
-                    <span class="photo__author"></span>
-                  </div>
-                  <div class="photo__likesum">
-                    <button class="button photo__like" type="button"></button>
-                    <span class="photo__sum"></span>
-                  </div>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="photo__item">
-              <figure class="photo__box">
-                <img src="#" alt="" class="photo__img">
-                <figcaption class="photo__description">
-                  <div class="photo__text">
-                    <b class="photo__title"></b>
-                    <span class="photo__author"></span>
-                  </div>
-                  <div class="photo__likesum">
-                    <button class="button photo__like" type="button"></button>
-                    <span class="photo__sum"></span>
-                  </div>
-                </figcaption>
-              </figure>
-            </li>
-          </ul>
-        </div>
+        <ul class="gallery__list photo-list">
+          <li class="photo-list__item photo-list__item--big">
+            <figure class="photo">
+              <img src="#" alt="" class="photo__img">
+              <figcaption class="photo__description">
+                <div class="photo__text">
+                  <b class="photo__title"></b>
+                  <span class="photo__author"></span>
+                </div>
+                <div class="photo__likesum">
+                  <button class="button photo__like-toggle" type="button">
+                    <span class="visually-hidden">Поставить лайк</span>
+                  </button>
+                  <span class="photo__sum"></span>
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="photo-list__item">
+            <figure class="photo">
+              <img src="#" alt="" class="photo__img">
+              <figcaption class="photo__description">
+                <div class="photo__text">
+                  <b class="photo__title"></b>
+                  <span class="photo__author"></span>
+                </div>
+                <div class="photo__likesum">
+                  <button class="button photo__like-toggle" type="button">
+                    <span class="visually-hidden">Поставить лайк</span>
+                  </button>
+                  <span class="photo__sum"></span>
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="photo-list__item">
+            <figure class="photo">
+              <img src="#" alt="" class="photo__img">
+              <figcaption class="photo__description">
+                <div class="photo__text">
+                  <b class="photo__title"></b>
+                  <span class="photo__author"></span>
+                </div>
+                <div class="photo__likesum">
+                  <button class="button photo__like-toggle" type="button">
+                    <span class="visually-hidden">Поставить лайк</span>
+                  </button>
+                  <span class="photo__sum"></span>
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="photo-list__item">
+            <figure class="photo">
+              <img src="#" alt="" class="photo__img">
+              <figcaption class="photo__description">
+                <div class="photo__text">
+                  <b class="photo__title"></b>
+                  <span class="photo__author"></span>
+                </div>
+                <div class="photo__likesum">
+                  <button class="button photo__like-toggle" type="button">
+                    <span class="visually-hidden">Поставить лайк</span>
+                  </button>
+                  <span class="photo__sum"></span>
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
       </section>
 
       <section class="video">
-        <header class="video__header">
-          <h2 class="video__title">Все еще сомневаетесь?</h2>
-          <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подоражали в очередной раз!</p>
+        <header class="header-block video__header">
+          <h2 class="header-block__title">Все еще сомневаетесь?</h2>
+          <p class="header-block__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подоражали в очередной раз!</p>
         </header>
         <video src="" class="video__box" width="" height="" poster="" controls>
           <source src="https://" type="video/">
