@@ -1,0 +1,17 @@
+.reasons__list {
+  @include reset-list;
+}
+
+.reasons__text-block {
+  padding: 0 20px;
+
+  text-align: center;
+}
+
+.reasons__title {
+  margin: 0;
+  padding: 0;
+
+  font-size: 21px;
+  line-height: 10px;
+}
