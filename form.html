@@ -2,36 +2,35 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Оставить отзыв</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
 
-  <body class="page">
-    <header class="page-header">
-      <a href="#" class="page-header__logo">
-        <img src="#" alt="Седона" class="page-header__logo-image" width="" height="">
-      </a>
-      <nav class="main-nav">
+  <body class="page-body">
+    <header class="page-header page-body__header">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--current">
+            <a href="index.html" class="site-list__link">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html" class="site-list__link">Фото и видео</a>
+          </li>
+          <li class="site-list__item site-list__item--current">
+            <a class="site-list__link">Форма отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#" class="site-list__link">Html academy</a>
+          </li>
+        </ul>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="#">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Фото и видео</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Форма отзыва</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Html academy</a>
-            </li>
-          </ul>
-        </div>
       </nav>
+      <div class="page-header__logo">
+        <img src="img/logo-mobile.svg" alt="Седона" class="page-header__image" width="102" height="83">
+      </div>
     </header>
 
     <main class="page-main">
@@ -175,5 +174,22 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      var navigation = document.querySelector('.main-nav');
+      var navToggle = navigation.querySelector('.main-nav__toggle');
+
+      navigation.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navigation.classList.contains('main-nav--closed')) {
+          navigation.classList.remove('main-nav--closed');
+          navigation.classList.add('main-nav--opened');
+        } else {
+          navigation.classList.remove('main-nav--opened');
+          navigation.classList.add('main-nav--closed');
+        }
+      });
+    </script>
   </body>
 </html>
