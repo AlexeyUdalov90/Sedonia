@@ -1,0 +1,50 @@
+.advantages-list {
+  @include reset-list;
+
+  padding: 20px 20px;
+}
+
+.advantages-list__item {
+  position: relative;
+  padding: 15px 0;
+  margin-left: 50px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 40px;
+    height: 40px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--housing::before {
+    background-image: url("../img/icon-house.svg");
+  }
+
+  &--souvenirs::before {
+    background-image: url("../img/icon-present.svg");
+  }
+
+  &--foods::before {
+    background-image: url("../img/icon-burger.svg");
+  }
+}
+
+.advantages-list__title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.advantages-list__description {
+  padding: 0;
+  margin: 0;
+}

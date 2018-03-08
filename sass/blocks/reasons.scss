@@ -1,9 +1,43 @@
 .reasons__list {
   @include reset-list;
+
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.reasons__item--first {
+  order: -2;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 37px;
+
+    background-color: inherit;
+    background-image: url("../img/white-cap.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+  }
+}
+
+.reasons__item--advantages {
+  order: -1;
+}
+
+.reasons__item--text-and-img {
+  color: #ffffff;
+  background-color: $blue;
+}
+
+.reasons__item--gray {
+  background-color: $gray;
 }
 
 .reasons__text-block {
-  padding: 0 20px;
+  padding: 40px 20px;
 
   text-align: center;
 }
@@ -11,7 +45,27 @@
 .reasons__title {
   margin: 0;
   padding: 0;
+  margin-bottom: 15px;
 
   font-size: 21px;
-  line-height: 10px;
+  line-height: 21px;
+}
+
+.reasons__description {
+  padding: 0;
+  margin: 0;
+  margin-top: 16px;
+}
+
+.reasons__image-block {
+  line-height: 0;
+  overflow: hidden;
+}
+
+.reasons__image {
+  position: relative;
+  left: 50%;
+  height: 260px;
+
+  transform: translateX(-50%);
 }
