@@ -1,17 +1,156 @@
 .reasons__list {
   @include reset-list;
+
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.reasons__item {
+  background-color: $gray;
+}
+
+.reasons__item--first {
+  order: -2;
+}
+
+.reasons__item--advantages {
+  order: -1;
+}
+
+.reasons__item--text-and-img {
+  color: #ffffff;
+  background-color: $blue;
 }
 
 .reasons__text-block {
-  padding: 0 20px;
+  width: 280px;
+  padding: 27px 0;
+  margin: 0 auto;
 
   text-align: center;
 }
 
 .reasons__title {
-  margin: 0;
-  padding: 0;
+  margin-bottom: 15px;
 
   font-size: 21px;
-  line-height: 10px;
+  line-height: 26px;
+}
+
+.reasons__description {
+  margin: 0;
+  margin-top: 15px;
+}
+
+.reasons__image-block {
+  line-height: 0;
+  overflow: hidden;
+}
+
+@media (max-width: $mobile-width-only) {
+  .reasons__item--first::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 37px;
+
+    background-color: inherit;
+    background-image: url("../img/white-cap.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+  }
+
+  .reasons__item--text-and-img {
+    .reasons__text-block {
+      padding: 34px 0 40px;
+    }
+  }
+
+  .reasons__item--underline {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 20px;
+      right: 20px;
+      bottom: 0;
+      height: 1px;
+
+      background-color: rgba(#000000, 0.1);
+    }
+  }
+
+  .reasons__image {
+    position: relative;
+    left: 50%;
+    width: auto;
+    height: 260px;
+
+    transform: translateX(-50%);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .reasons__list {
+    width: 100%;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .reasons__item {
+    min-height: 256px;
+  }
+
+  .reasons__item--text-and-img {
+    display: flex;
+    flex-direction: row;
+
+    &:nth-child(2) .reasons__image-block {
+      order: -1;
+    }
+  }
+
+  .reasons__text-block {
+    box-sizing: border-box;
+    width: 256px;
+    margin: 0;
+    padding: 45px;
+  }
+
+  .reasons__title {
+    width: 155px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  .reasons__image-block {
+    width: 512px;
+    height: inherit;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reasons__text-block {
+    width: 400px;
+    padding: 50px 67px 60px;
+  }
+
+  .reasons__image-block {
+    position: relative;
+    width: 800px;
+    height: inherit;
+  }
+
+  .reasons__image {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+
+    transform: translateY(-50%);
+  }
 }
