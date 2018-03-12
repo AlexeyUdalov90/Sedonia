@@ -13,10 +13,21 @@
 }
 
 .page-body__content {
-  max-width: 1200px;
   min-width: 320px;
   margin: 0 auto;
 
   background-color: #ffffff;
   box-shadow: 0 5px 15px rgba(#000000, 0.2);
+}
+
+@media (min-width: $tablet-width) {
+  .page-body__content {
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-body__content {
+    width: $desktop-width;
+  }
 }
