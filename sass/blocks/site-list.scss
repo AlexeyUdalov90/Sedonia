@@ -70,19 +70,19 @@
     box-shadow: none;
 
     &[href]:hover {
-      color: $blue;
+      color: $item-nav-color-hover;
       background: none;
     }
 
     &[href]:active {
-      color: #000000;
+      color: $text-color;
       opacity: 0.3;
       background: none;
     }
   }
 
   .site-list__item--current .site-list__link {
-    color: rgb(118, 99, 87);
+    color: $item-nav-color-current;
     cursor: pointer;
 
     &:hover {
