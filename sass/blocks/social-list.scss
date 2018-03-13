@@ -1,0 +1,63 @@
+.social-list {
+  @include reset-list;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  width: 250px;
+  margin: 0 auto;
+}
+
+.social-list__item:not(:nth-child(3n)) {
+  margin-right: 6px;
+}
+
+.social-list__link {
+  display: flex;
+  justify-content: flex-start;
+
+  width: 46px;
+  height: 48px;
+
+  background-color: $button-background;
+
+  &::before {
+    content: "";
+    margin: auto;
+  }
+
+  &--twitter::before {
+    width: 18px;
+    height: 14px;
+
+    background-image: url("../img/icon-twitter.svg");
+  }
+
+  &--facebook::before {
+    width: 9px;
+    height: 18px;
+
+    background-image: url("../img/icon-facebook.svg");
+  }
+
+  &--youtube::before {
+    width: 20px;
+    height: 14px;
+
+    background-image: url("../img/icon-youtube.svg");
+  }
+
+  &:hover {
+    background-color: $button-background-hover;
+  }
+
+  &:active {
+    background-color: $button-background-active;
+
+    &::before {
+      opacity: 0.3;
+    }
+  }
+}

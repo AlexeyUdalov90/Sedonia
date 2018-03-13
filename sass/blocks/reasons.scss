@@ -7,7 +7,7 @@
 }
 
 .reasons__item {
-  background-color: $gray;
+  background-color: $reasons-background;
 }
 
 .reasons__item--first {
@@ -19,8 +19,8 @@
 }
 
 .reasons__item--text-and-img {
-  color: #ffffff;
-  background-color: $blue;
+  color: $other-text-color;
+  background-color: $reasons-img-background;
 }
 
 .reasons__text-block {
@@ -32,7 +32,8 @@
 }
 
 .reasons__title {
-  margin-bottom: 15px;
+  margin: 0;
+  margin-bottom: 11px;
 
   font-size: 21px;
   line-height: 26px;
@@ -64,7 +65,7 @@
 
   .reasons__item--text-and-img {
     .reasons__text-block {
-      padding: 34px 0 40px;
+      padding: 40px 0;
     }
   }
 
@@ -124,7 +125,7 @@
   .reasons__title {
     width: 155px;
     margin: 0 auto;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
   }
 
   .reasons__image-block {
@@ -136,7 +137,13 @@
 @media (min-width: $desktop-width) {
   .reasons__text-block {
     width: 400px;
-    padding: 50px 67px 60px;
+    padding: 45px 50px 65px;
+  }
+
+  .reasons__item--text-and-img {
+    .reasons__text-block {
+      padding: 53px 67px 57px;
+    }
   }
 
   .reasons__image-block {

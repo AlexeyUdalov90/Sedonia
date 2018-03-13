@@ -3,12 +3,12 @@
 
   padding: 20px;
 
-  background-color: #ffffff;
+  background-color: $advantages-background;
 }
 
 .advantages-list__item {
   position: relative;
-  padding: 15px 0;
+  padding: 15px 0 13px;
   margin-left: 50px;
 
   &::before {
@@ -59,11 +59,17 @@
     padding: 0;
   }
 
+  .advantages-list__title {
+    margin-bottom: 20px;
+
+    font-size: 21px;
+  }
+
   .advantages-list__item {
     box-sizing: border-box;
     width: 256px;
     margin: 0;
-    padding: 160px 45px 60px;
+    padding: 160px 45px 62px;
 
     text-align: center;
 
@@ -86,6 +92,6 @@
 @media (min-width: $desktop-width) {
   .advantages-list__item {
     width: 400px;
-    padding: 160px 70px 60px;
+    padding: 160px 70px 83px;
   }
 }
