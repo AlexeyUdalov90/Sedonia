@@ -46,6 +46,7 @@
   width: 87.5%;
   max-width: 515px;
   margin: 0 auto;
+  margin-bottom: 10px;
 
   text-align: center;
 }
@@ -62,18 +63,25 @@
 
 .page-main__text {
   margin: 0;
-  padding: 0;
-  padding-bottom: 30px;
+}
+
+.page-main__reasons {
+  margin-bottom: 27px;
 }
 
 .page-main__map {
+  position: relative;
   height: 350px;
+  overflow: hidden;
 
   img {
-    width: 320px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 768px;
     height: 350px;
 
-    text-align: center;
+    transform: translateX(-50%);
   }
 }
 
@@ -103,12 +111,16 @@
     }
   }
 
+  .page-main__header {
+    margin-bottom: 50px;
+  }
+
   .page-main__title {
     font-size: 21px;
   }
 
-  .page-main__text {
-    padding-bottom: 50px;
+  .page-main__reasons {
+    margin-bottom: 52px;
   }
 }
 

@@ -16,19 +16,19 @@
   padding: 8px 0;
 
   text-align: center;
-  color: #ffffff;
+  color: $other-text-color;
 
-  background-color: rgb(129, 179, 210);
+  background-color: $mobile-nav-background;
   box-shadow: inset 0 1px rgba(#ffffff, 0.2),
     0 -1px rgba(#010101, 0.2);
 
   &[href]:hover {
-    background-color: rgb(102, 158, 192);
+    background-color: $mobile-nav-background-hover;
   }
 
   &[href]:active {
     color: rgba(#ffffff, 0.3);
-    background-color: rgb(84, 150, 189);
+    background-color: $mobile-nav-background-active;
   }
 }
 
@@ -64,7 +64,7 @@
   .site-list__link:not(.site-list__link--logo) {
     padding: 15px 0;
 
-    color: #000000;
+    color: $text-color;
 
     background: none;
     box-shadow: none;

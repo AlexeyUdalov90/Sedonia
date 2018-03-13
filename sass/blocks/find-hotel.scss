@@ -2,7 +2,7 @@
   width: 87.5%;
   max-width: 460px;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 48px;
 
   text-align: center;
 }
@@ -10,7 +10,6 @@
 .find-hotel__title {
   padding: 0;
   margin: 0;
-  margin-top: 25px;
   margin-bottom: 20px;
 
   font-size: 21px;
@@ -19,19 +18,59 @@
 }
 
 .find-hotel__text {
-  padding: 0;
   margin: 0;
-  margin-bottom: 37px;
+  margin-bottom: 36px;
+
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .find-hotel__button {
-  padding: 15px 0;
-  width: 100%;
+  @include reset-link;
+
+  display: block;
+  padding: 16px 0;
 
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   color: #ffffff;
 
-  background-color: $blue;
+  background-color: $button-background;
+
+  &:hover {
+    background-color: $button-background-hover;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
+    background-color: $button-background-active;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .find-hotel {
+    margin-bottom: 58px;
+  }
+
+  .find-hotel__title {
+    margin-bottom: 33px;
+
+    font-size: 30px;
+    line-height: 1;
+  }
+
+  .find-hotel__text {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .find-hotel {
+    margin-bottom: 66px;
+  }
+
+  .find-hotel__text {
+    margin-bottom: 45px;
+  }
 }
