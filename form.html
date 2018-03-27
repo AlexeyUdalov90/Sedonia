@@ -45,108 +45,102 @@
           <p class="header-block__text">Помогите нашим отелям стать лучше! оставте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </header>
 
-        <form action="#" method="post" class="form-recall">
-          <fieldset class="form-section form-recall__item">
-            <legend class="form-section__title">Представтесь:</legend>
-            <p class="form-text">
-              <label class="form-text__content">
-                <span class="form-text__tag">Имя<sup>*</sup>:</span>
-                <input type="text" class="form-text__input" name="name" id="name" placeholder="Петр" required>
+        <form action="#" method="post" class="recall-form">
+          <fieldset class="recall-form__block">
+            <legend class="recall-form__title">Представтесь:</legend>
+            <p class="input-text recall-form__input">
+              <label class="input-text__label">
+                Имя<sup>*</sup>:
+                <input type="text" class="input-text__field" name="name" id="name" placeholder="Петр" required>
               </label>
             </p>
-            <p class="form-text">
-              <label class="form-text__content">
-                <span class="form-text__tag">Фамилия<sup>*</sup>:</span>
-                <input type="text" class="form-text__input" name="surname" id="surname" placeholder="Иванов" required>
+            <p class="input-text recall-form__input">
+              <label class="input-text__label">
+                Фамилия<sup>*</sup>:
+                <input type="text" class="input-text__field" name="surname" id="surname" placeholder="Иванов" required>
               </label>
             </p>
-            <p class="form-text">
-              <label class="form-text__content">
-                <span class="form-text__tag">Отчество:</span>
-                <input type="text" class="form-text__input" name="patronymic" id="patronymic" placeholder="Александрович">
-              </label>
-            </p>
-          </fieldset>
-          <fieldset class="form-section form-recall__item">
-            <legend class="form-section__title">Представтесь:</legend>
-            <p class="form-text form-text--telefon">
-              <label class="form-text__content">
-                <span class="form-text__tag">Контактный телефон<sup>*</sup>:</span>
-                <input type="tel" class="form-text__input form-text__input--telephone" name="tel" id="tel" placeholder="Введите телефон" required>
-              </label>
-            </p>
-            <p class="form-text form-text--email">
-              <label class="form-text__content">
-                <span class="form-text__tag">Электронная почта<sup>*</sup>:</span>
-                <input type="email" class="form-text__input form-text__input--email" name="email" id="email" placeholder="Введите e-mail" required>
+            <p class="input-text recall-form__input">
+              <label class="input-text__label">
+                Отчество:
+                <input type="text" class="input-text__field" name="patronymic" id="patronymic" placeholder="Александрович">
               </label>
             </p>
           </fieldset>
-          <fieldset class="form-section form-recall__item">
-            <legend class="form-section__title">Ваше общее впечатление:</legend>
-            <p class="form-radio">
-              <label class="form-radio__content">
+          <fieldset class="recall-form__block">
+            <legend class="recall-form__title">Контактная информация:</legend>
+            <p class="input-text recall-form__input">
+              <label class="input-text__label">
+                Контактный телефон<sup>*</sup>:
+                <input type="tel" class="input-text__field input-text__field--phone" name="phone" id="phone" placeholder="Введите телефон" required>
+              </label>
+            </p>
+            <p class="input-text recall-form__input">
+              <label class="input-text__label">
+                Электронная почта<sup>*</sup>:
+                <input type="email" class="input-text__field input-text__field--email" name="email" id="email" placeholder="Введите e-mail" required>
+              </label>
+            </p>
+          </fieldset>
+          <fieldset class="recall-form__block">
+            <legend class="recall-form__title">Ваше общее впечатление:</legend>
+            <p class="input-radio">
+              <label class="input-radio__label">
                 <input type="radio" class="visually-hidden" name="rating" value="good" checked>
-                <span class="form-radio__control"></span>
-                <span class="form-radio__tag">Скорее положительное</span>
+                <span class="input-radio__control"></span>Скорее положительное
               </label>
             </p>
-            <p class="form-radio">
-              <label class="form-radio__content">
+            <p class="input-radio">
+              <label class="input-radio__label">
                 <input type="radio" class="visually-hidden" name="rating" value="bad">
-                <span class="form-radio__control"></span>
-                <span class="form-radio__tag">Скорее отрицательное</span>
+                <span class="input-radio__control"></span>Скорее отрицательное
               </label>
             </p>
-            <p class="form-radio">
-              <label class="form-radio__content">
+            <p class="input-radio">
+              <label class="input-radio__label">
                 <input type="radio" class="visually-hidden" name="rating" value="0">
-                <span class="form-radio__control"></span>
-                <span class="form-radio__tag">Затрудняюсь ответить</span>
+                <span class="input-radio__control"></span>Затрудняюсь ответить
               </label>
             </p>
           </fieldset>
-          <fieldset class="form-section form-recall__item">
-            <legend class="form-section__title">Посещенные достопримечательности:</legend>
-            <p class="form-checkbox">
-              <label class="form-checkbox__content">
+          <fieldset class="recall-form__block">
+            <legend class="recall-form__title">Посещенные достопримечательности:</legend>
+            <p class="input-checkbox">
+              <label class="input-checkbox__label">
                 <input type="checkbox" class="visually-hidden" name="devil-bridge" checked>
-                <span class="form-checkbox__control"></span>
-                <span class="form-checkbox__tag">Мост Дьявола</span>
+                <span class="input-checkbox__control"></span>Мост Дьявола
               </label>
             </p>
-            <p class="form-checkbox">
-              <label class="form-checkbox__content">
+            <p class="input-checkbox">
+              <label class="input-checkbox__label">
                 <input type="checkbox" class="visually-hidden" name="slide-park" checked>
-                <span class="form-checkbox__control"></span>
-                <span class="form-checkbox__tag">Слайд-парк</span>
+                <span class="input-checkbox__control"></span>Слайд-парк
               </label>
             </p>
-            <p class="form-checkbox">
-              <label class="form-checkbox__content">
+            <p class="input-checkbox">
+              <label class="input-checkbox__label">
                 <input type="checkbox" class="visually-hidden" name="mountain-bell">
-                <span class="form-checkbox__control"></span>
-                <span class="form-checkbox__tag">Гора-Колокол</span>
+                <span class="input-checkbox__control"></span>Гора-Колокол
               </label>
             </p>
-            <p class="form-checkbox">
-              <label class="form-checkbox__content">
+            <p class="input-checkbox">
+              <label class="input-checkbox__label">
                 <input type="checkbox" class="visually-hidden" name="red-sliffs" checked>
-                <span class="form-checkbox__control"></span>
-                <span class="form-checkbox__tag">Красные скалы</span>
+                <span class="input-checkbox__control"></span>Красные скалы
               </label>
             </p>
           </fieldset>
-          <fieldset class="form-section form-recall__item">
-            <legend class="form-section__title">Опишите свои эмоции:</legend>
-            <p class="form-textarea">
-              <textarea name="emotions" class="form-text__item">
+          <fieldset class="recall-form__block">
+            <legend class="recall-form__title">Опишите свои эмоции:</legend>
+            <p class="input-text">
+              <label class="visually-hidden" for="emotions">Ваши эмоции:</label>
+              <textarea name="emotions" id="emotions" class="input-text__field input-text__field--textarea">
                 Опишите подробно все свои восторги
               </textarea>
             </p>
           </fieldset>
-          <button class="button form-recall__button" type="submit">Отправить форму</button>
-          <small class="form-recall__footnote"><sup>*</sup> - обязательные поля</small>
+          <button class="button recall-form__button" type="submit">Отправить форму</button>
+          <small class="recall-form__footnote"><sup>*</sup> - обязательные поля</small>
         </form>
       </main>
 
@@ -173,28 +167,13 @@
 
         <div class="page-footer__copyright">
           <span class="page-footer__text">Разработано</span>
-          <a href="#" class="page-footer__link" title="HTML Academy">
+          <a href="https://htmlacademy.ru/" class="page-footer__link" title="HTML Academy">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 154.4 195.28" width="27" height="34"><path d="M78 .6l-.8-.1-76.7 8v140.6l76.7 45.6 76.7-45.6V8.5zm65.9 142.8L77.2 183l-66.7-39.7V85.7l66.4 39.5.1 7.2-45.5-27.1-.1 7 45.7 27.5.1 7.3-45.7-27.2-.1 7 45.7 27.5 46.2-27.6v-7h-.1V97l20.6-12.3v58.7zm-.1-66.1L125.6 88l-8.4 5-40.1-23.9-.1 7 34.3 20.4-.3.2-.7.4-4.9 2.9-28.3-16.9-.1 7 22.4 13.3-5.3 3.5-.1.1-16.9-10-.1 7 11.1 6.5-11.3 6.8-66-39.3 66.1-39.8 66.9 39.1zm.1-7l-67-39.5-66.3 39.5V17.6l66.7-7 66.7 7v52.7z"/></svg>
         </a>
         </div>
       </footer>
     </div>
 
-    <script>
-      var navigation = document.querySelector('.main-nav');
-      var navToggle = navigation.querySelector('.main-nav__toggle');
-
-      navigation.classList.remove('main-nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navigation.classList.contains('main-nav--closed')) {
-          navigation.classList.remove('main-nav--closed');
-          navigation.classList.add('main-nav--opened');
-        } else {
-          navigation.classList.remove('main-nav--opened');
-          navigation.classList.add('main-nav--closed');
-        }
-      });
-    </script>
+    <script src="js/navigation.js"></script>
   </body>
 </html>
