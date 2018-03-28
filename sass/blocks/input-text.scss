@@ -2,7 +2,12 @@
   display: flex;
   justify-content: flex-start;
 
+  margin: 0;
   width: 280px;
+
+  &:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
 
   &--row {
     flex-direction: row;
@@ -33,6 +38,7 @@
 
   background-color: $input-background;
   border: none;
+  border-radius: 0;
   box-sizing: border-box;
 
   &::placeholder {
@@ -43,5 +49,15 @@
     width: 100%;
     height: 160px;
     resize: none;
+  }
+
+  &:hover {
+    background-color: $input-background-hover;
+  }
+
+  &:focus {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 4px $input-background-active;
+    outline: none;
   }
 }

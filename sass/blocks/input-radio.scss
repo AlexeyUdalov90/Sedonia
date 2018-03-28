@@ -1,9 +1,30 @@
+.input-radio {
+  margin: 0;
+
+  &:not(:last-of-type) {
+    margin-bottom: 13px;
+  }
+}
+
 .input-radio__label {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
 
   cursor: pointer;
+
+  &:hover .input-radio__control,
+  &:focus .input-radio__control {
+    background-color: $input-background-hover;
+  }
+
+  &:active .input-radio__control {
+    background-color: $input-background-active;
+
+    .input-radio__control::before {
+      opacity: 0.3;
+    }
+  }
 }
 
 .input-radio__control {
@@ -38,4 +59,8 @@
 
 input[type="radio"]:checked ~ .input-radio__control::before {
   display: block;
+}
+
+input[type="radio"]:focus ~ .input-radio__control, {
+  background-color: $input-background-hover;
 }

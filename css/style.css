@@ -30,8 +30,17 @@ img {
 .button {
   padidng: 0;
   text-transform: uppercase;
-  border: none;
-  background: none; }
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #81b3d2;
+  border: none; }
+  .button:hover {
+    background-color: #669ec0; }
+  .button:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5496bd; }
 
 .page-body {
   margin: 0;
@@ -52,6 +61,7 @@ img {
 
 @media (min-width: 768px) {
   .page-body__content {
+    margin: 0 auto;
     width: 768px; } }
 
 @media (min-width: 1200px) {
@@ -262,6 +272,8 @@ img {
   margin: 0 auto;
   margin-bottom: 10px;
   text-align: center; }
+  .page-main__header--small {
+    max-width: 440px; }
 
 .page-main__title {
   padding: 0;
@@ -308,7 +320,9 @@ img {
   .page-main__header {
     margin-bottom: 50px; }
   .page-main__title {
-    font-size: 21px; }
+    font-size: 30px; }
+    .page-main__title--small {
+      font-size: 21px; }
   .page-main__reasons {
     margin-bottom: 52px; } }
 
@@ -559,16 +573,7 @@ img {
   color: inherit;
   display: block;
   padding: 16px 0;
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
-  color: #ffffff;
-  background-color: #81b3d2; }
-  .find-hotel__button:hover {
-    background-color: #669ec0; }
-  .find-hotel__button:active {
-    color: rgba(255, 255, 255, 0.3);
-    background-color: #5496bd; }
+  color: #ffffff; }
 
 @media (min-width: 768px) {
   .find-hotel {
@@ -587,21 +592,44 @@ img {
     margin-bottom: 45px; } }
 
 .recall-form {
-  margin: 0 auto;
-  width: 280px;
-  text-transform: none; }
+  margin-top: 40px; }
 
 .recall-form__block {
-  margin: 0;
-  padding: 0;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 0 20px;
+  width: 280px;
+  text-transform: none;
   border: none; }
+  .recall-form__block:last-of-type {
+    margin-bottom: 50px; }
 
 .recall-form__title {
+  margin-bottom: 15px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center; }
+
+.recall-form__button {
+  margin: 0 auto;
+  padding: 16px 36px;
+  display: block; }
+
+.recall-form__footnote {
+  display: none; }
+
+@media (max-width: 767px) {
+  .recall-form__block::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: -18px;
+    height: 1px;
+    background-color: #f2f2f2; } }
 
 .input-text {
   display: -webkit-box;
@@ -610,7 +638,10 @@ img {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  margin: 0;
   width: 280px; }
+  .input-text:not(:last-of-type) {
+    margin-bottom: 20px; }
   .input-text--row {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -642,6 +673,7 @@ img {
   font-weight: 700;
   background-color: #f2f2f2;
   border: none;
+  border-radius: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
   .input-text__field::-webkit-input-placeholder {
@@ -656,12 +688,31 @@ img {
     width: 100%;
     height: 160px;
     resize: none; }
+  .input-text__field:hover {
+    background-color: #e5e5e5; }
+  .input-text__field:focus {
+    background-color: transparent;
+    -webkit-box-shadow: inset 0 0 0 4px #d5d5d5;
+            box-shadow: inset 0 0 0 4px #d5d5d5;
+    outline: none; }
+
+.input-radio {
+  margin: 0; }
+  .input-radio:not(:last-of-type) {
+    margin-bottom: 13px; }
 
 .input-radio__label {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   cursor: pointer; }
+  .input-radio__label:hover .input-radio__control,
+  .input-radio__label:focus .input-radio__control {
+    background-color: #e5e5e5; }
+  .input-radio__label:active .input-radio__control {
+    background-color: #d5d5d5; }
+    .input-radio__label:active .input-radio__control .input-radio__control::before {
+      opacity: 0.3; }
 
 .input-radio__control {
   position: relative;
@@ -688,11 +739,26 @@ img {
 input[type="radio"]:checked ~ .input-radio__control::before {
   display: block; }
 
+input[type="radio"]:focus ~ .input-radio__control {
+  background-color: #e5e5e5; }
+
+.input-checkbox {
+  margin: 0; }
+  .input-checkbox:not(:last-of-type) {
+    margin-bottom: 24px; }
+
 .input-checkbox__label {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   cursor: pointer; }
+  .input-checkbox__label:hover .input-checkbox__control,
+  .input-checkbox__label:focus .input-checkbox__control {
+    background-color: #e5e5e5; }
+  .input-checkbox__label:active .input-checkbox__control {
+    background-color: #d5d5d5; }
+    .input-checkbox__label:active .input-checkbox__control .input-checkbox__control::before {
+      opacity: 0.3; }
 
 .input-checkbox__control {
   position: relative;
@@ -719,6 +785,15 @@ input[type="radio"]:checked ~ .input-radio__control::before {
 
 input[type="checkbox"]:checked ~ .input-checkbox__control::before {
   display: block; }
+
+input[type="checkbox"]:focus ~ .input-checkbox__control {
+  background-color: #e5e5e5; }
+
+input[type="checkbox"]:active ~ .input-checkbox__control::before {
+  opacity: 0.3; }
+
+input[type="checkbox"]:active ~ .input-checkbox__control {
+  background-color: #d5d5d5; }
 
 .social-list {
   margin: 0;

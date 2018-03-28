@@ -31,21 +31,7 @@
   display: block;
   padding: 16px 0;
 
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
   color: #ffffff;
-
-  background-color: $button-background;
-
-  &:hover {
-    background-color: $button-background-hover;
-  }
-
-  &:active {
-    color: rgba(#ffffff, 0.3);
-    background-color: $button-background-active;
-  }
 }
 
 @media (min-width: $tablet-width) {

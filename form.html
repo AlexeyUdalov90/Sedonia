@@ -40,13 +40,13 @@
         <div class="page-main__intro page-main__intro--inner">
           <img src="img/text-intro-inner.png" alt="Sedona" class="page-main__text-image" width="458" height="78">
         </div>
-        <header class="header-block page-main__header">
-          <h1 class="header-block__title">Оставте свой отзыв</h1>
-          <p class="header-block__text">Помогите нашим отелям стать лучше! оставте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <header class="page-main__header page-main__header--small">
+          <h1 class="page-main__title">Оставте свой отзыв</h1>
+          <p class="page-main__text">Помогите нашим отелям стать лучше! оставте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </header>
 
         <form action="#" method="post" class="recall-form">
-          <fieldset class="recall-form__block">
+          <fieldset class="recall-form__block recall-form__block--name">
             <legend class="recall-form__title">Представтесь:</legend>
             <p class="input-text recall-form__input input-text--row">
               <label for="name" class="input-text__label">Имя<sup>*</sup>:</label>
@@ -61,7 +61,7 @@
               <input type="text" class="input-text__field" name="patronymic" id="patronymic" placeholder="Александрович">
             </p>
           </fieldset>
-          <fieldset class="recall-form__block">
+          <fieldset class="recall-form__block recall-form__block--contacts">
             <legend class="recall-form__title">Контактная информация:</legend>
             <p class="input-text recall-form__input input-text--col">
               <label for="phone" class="input-text__label">Контактный телефон<sup>*</sup>:</label>
@@ -72,7 +72,7 @@
               <input type="email" class="input-text__field input-text__field--email" name="email" id="email" placeholder="Введите e-mail" required>
             </p>
           </fieldset>
-          <fieldset class="recall-form__block">
+          <fieldset class="recall-form__block recall-form__block--impress">
             <legend class="recall-form__title">Ваше общее впечатление:</legend>
             <p class="input-radio">
               <label class="input-radio__label">
@@ -93,7 +93,7 @@
               </label>
             </p>
           </fieldset>
-          <fieldset class="recall-form__block">
+          <fieldset class="recall-form__block recall-form__block--sights">
             <legend class="recall-form__title">Посещенные достопримечательности:</legend>
             <p class="input-checkbox">
               <label class="input-checkbox__label">
@@ -120,14 +120,14 @@
               </label>
             </p>
           </fieldset>
-          <fieldset class="recall-form__block">
+          <fieldset class="recall-form__block recall-form__block--emotions">
             <legend class="recall-form__title">Опишите свои эмоции:</legend>
             <p class="input-text">
               <label class="visually-hidden" for="emotions">Ваши эмоции:</label>
               <textarea name="emotions" id="emotions" class="input-text__field input-text__field--textarea" placeholder="Опишите подробно все свои восторги"></textarea>
             </p>
           </fieldset>
-          <button class="button recall-form__button" type="submit">Отправить форму</button>
+          <button class="button recall-form__button" type="submit">Отправить отзыв</button>
           <small class="recall-form__footnote"><sup>*</sup> - обязательные поля</small>
         </form>
       </main>

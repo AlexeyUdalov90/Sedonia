@@ -1,19 +1,56 @@
 .recall-form {
-  margin: 0 auto;
-  width: 280px;
-  text-transform: none;
+  margin-top: 40px;
 }
 
 .recall-form__block {
-  margin: 0;
-  padding: 0;
+  position: relative;
+
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 0 20px;
+
+  width: 280px;
+
+  text-transform: none;
+
   border: none;
+
+  &:last-of-type {
+    margin-bottom: 50px;
+  }
 }
 
 .recall-form__title {
+  margin-bottom: 15px;
+
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+}
+
+.recall-form__button {
+  margin: 0 auto;
+  padding: 16px 36px;
+
+  display: block;
+}
+
+.recall-form__footnote {
+  display: none;
+}
+
+@media (max-width: $mobile-width-only) {
+  .recall-form__block::before {
+    content: "";
+
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: -18px;
+
+    height: 1px;
+    background-color: $input-background;
+  }
 }

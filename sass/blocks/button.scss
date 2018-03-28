@@ -2,7 +2,20 @@
   padidng: 0;
 
   text-transform: uppercase;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
 
+  background-color: $button-background;
   border: none;
-  background: none;
+
+  &:hover {
+    background-color: $button-background-hover;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
+    background-color: $button-background-active;
+  }
 }

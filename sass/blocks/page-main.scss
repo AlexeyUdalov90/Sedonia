@@ -49,6 +49,10 @@
   margin-bottom: 10px;
 
   text-align: center;
+
+  &--small {
+    max-width: 440px;
+  }
 }
 
 .page-main__title {
@@ -116,7 +120,11 @@
   }
 
   .page-main__title {
-    font-size: 21px;
+    font-size: 30px;
+
+    &--small {
+      font-size: 21px;
+    }
   }
 
   .page-main__reasons {
