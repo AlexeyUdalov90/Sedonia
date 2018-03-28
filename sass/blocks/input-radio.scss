@@ -1,0 +1,41 @@
+.input-radio__label {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.input-radio__control {
+  position: relative;
+
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+
+  width: 56px;
+  height: 56px;
+
+  background-color: $input-background;
+  border-radius: 50%;
+
+  &::before {
+    content: "";
+    display: none;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 22px;
+    height: 22px;
+
+    border-radius: 50%;
+    background-color: $radio-checked;
+    transform: translate(-50%, -50%);
+  }
+}
+
+input[type="radio"]:checked ~ .input-radio__control::before {
+  display: block;
+}

@@ -1,11 +1,19 @@
 .recall-form {
+  margin: 0 auto;
+  width: 280px;
   text-transform: none;
 }
 
 .recall-form__block {
+  margin: 0;
+  padding: 0;
   border: none;
 }
 
 .recall-form__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
 }

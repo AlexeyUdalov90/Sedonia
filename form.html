@@ -48,51 +48,41 @@
         <form action="#" method="post" class="recall-form">
           <fieldset class="recall-form__block">
             <legend class="recall-form__title">Представтесь:</legend>
-            <p class="input-text recall-form__input">
-              <label class="input-text__label">
-                Имя<sup>*</sup>:
-                <input type="text" class="input-text__field" name="name" id="name" placeholder="Петр" required>
-              </label>
+            <p class="input-text recall-form__input input-text--row">
+              <label for="name" class="input-text__label">Имя<sup>*</sup>:</label>
+              <input type="text" class="input-text__field" name="name" id="name" placeholder="Петр" required>
             </p>
-            <p class="input-text recall-form__input">
-              <label class="input-text__label">
-                Фамилия<sup>*</sup>:
-                <input type="text" class="input-text__field" name="surname" id="surname" placeholder="Иванов" required>
-              </label>
+            <p class="input-text recall-form__input input-text--row">
+              <label for="surname" class="input-text__label">Фамилия<sup>*</sup>:</label>
+              <input type="text" class="input-text__field" name="surname" id="surname" placeholder="Иванов" required>
             </p>
-            <p class="input-text recall-form__input">
-              <label class="input-text__label">
-                Отчество:
-                <input type="text" class="input-text__field" name="patronymic" id="patronymic" placeholder="Александрович">
-              </label>
+            <p class="input-text recall-form__input input-text--row">
+              <label for="patronymic" class="input-text__label">Отчество:</label>
+              <input type="text" class="input-text__field" name="patronymic" id="patronymic" placeholder="Александрович">
             </p>
           </fieldset>
           <fieldset class="recall-form__block">
             <legend class="recall-form__title">Контактная информация:</legend>
-            <p class="input-text recall-form__input">
-              <label class="input-text__label">
-                Контактный телефон<sup>*</sup>:
-                <input type="tel" class="input-text__field input-text__field--phone" name="phone" id="phone" placeholder="Введите телефон" required>
-              </label>
+            <p class="input-text recall-form__input input-text--col">
+              <label for="phone" class="input-text__label">Контактный телефон<sup>*</sup>:</label>
+              <input type="tel" class="input-text__field input-text__field--phone" name="phone" id="phone" placeholder="Введите телефон" required>
             </p>
-            <p class="input-text recall-form__input">
-              <label class="input-text__label">
-                Электронная почта<sup>*</sup>:
-                <input type="email" class="input-text__field input-text__field--email" name="email" id="email" placeholder="Введите e-mail" required>
-              </label>
+            <p class="input-text recall-form__input input-text--col">
+              <label for="email" class="input-text__label">Электронная почта<sup>*</sup>:</label>
+              <input type="email" class="input-text__field input-text__field--email" name="email" id="email" placeholder="Введите e-mail" required>
             </p>
           </fieldset>
           <fieldset class="recall-form__block">
             <legend class="recall-form__title">Ваше общее впечатление:</legend>
             <p class="input-radio">
               <label class="input-radio__label">
-                <input type="radio" class="visually-hidden" name="rating" value="good" checked>
+                <input type="radio" class="visually-hidden" name="rating" value="2" checked>
                 <span class="input-radio__control"></span>Скорее положительное
               </label>
             </p>
             <p class="input-radio">
               <label class="input-radio__label">
-                <input type="radio" class="visually-hidden" name="rating" value="bad">
+                <input type="radio" class="visually-hidden" name="rating" value="1">
                 <span class="input-radio__control"></span>Скорее отрицательное
               </label>
             </p>
@@ -134,9 +124,7 @@
             <legend class="recall-form__title">Опишите свои эмоции:</legend>
             <p class="input-text">
               <label class="visually-hidden" for="emotions">Ваши эмоции:</label>
-              <textarea name="emotions" id="emotions" class="input-text__field input-text__field--textarea">
-                Опишите подробно все свои восторги
-              </textarea>
+              <textarea name="emotions" id="emotions" class="input-text__field input-text__field--textarea" placeholder="Опишите подробно все свои восторги"></textarea>
             </p>
           </fieldset>
           <button class="button recall-form__button" type="submit">Отправить форму</button>
