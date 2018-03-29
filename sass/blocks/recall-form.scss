@@ -1,5 +1,5 @@
 .recall-form {
-  margin-top: 42px;
+  margin-bottom: 30px;
 }
 
 .recall-form__block {
@@ -28,11 +28,27 @@
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  color: #000000;
 }
 
-.recall-form__block--contacts label {
-  margin-left: 20px;
-  margin-bottom: 8px;
+.recall-form__block--name .recall-form__input {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+}
+
+.recall-form__block--contacts {
+  .recall-form__input {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  label {
+    margin-left: 20px;
+    margin-bottom: 8px;
+  }
 }
 
 .recall-form__input,
@@ -59,7 +75,6 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    z-index: 5;
 
     width: 58px;
     height: 58px;
@@ -129,10 +144,8 @@
 
     width: 648px;
     margin: 0 auto;
-
-    &:last-of-type {
-      margin-bottom: 60px;
-    }
+    // margin-top: 60px;
+    margin-bottom: 60px;
   }
 
   .recall-form__block {
@@ -141,6 +154,10 @@
 
     &--sights {
       margin-bottom: 20px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 60px;
     }
   }
 
@@ -170,10 +187,10 @@
   .recall-form__block--name,
   .recall-form__block--impress {
     width: 275px;
+  }
 
-    .recall-form__title {
-      text-align: left;
-    }
+  .recall-form__title--name {
+    text-align: left;
   }
 
   .recall-form__block--contacts,
@@ -219,6 +236,8 @@
   .recall-form__button {
     margin: 0;
     margin-right: auto;
+
+    padding: 16px 57px;
   }
 
   .recall-form__footnote {
@@ -226,5 +245,60 @@
     align-self: center;
 
     line-height: 26px;
+    color: $text-color;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .recall-form {
+    width: 960px;
+  }
+
+  .recall-form__block--name,
+  .recall-form__block--impress {
+    width: 400px;
+  }
+
+  .recall-form__block--impress::after {
+    right: -80px;
+  }
+
+  .recall-form__block--sights .recall-form__wrapper {
+    width: 100%;
+  }
+
+  .recall-form__block--contacts {
+    .recall-form__wrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+
+    .recall-form__input {
+      flex-direction: row;
+      align-items: center;
+
+      margin: 0;
+    }
+
+    label {
+      margin-left: 0;
+    }
+  }
+
+  .recall-form__input--phone {
+    width: 400px;
+  }
+
+  .recall-form__input--email {
+    width: 480px;
+  }
+
+  .recall-form__label {
+    display: none;
+  }
+
+  .recall-form__button {
+    padding: 16px 136px;
   }
 }

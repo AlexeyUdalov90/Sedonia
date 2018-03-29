@@ -47,7 +47,7 @@
 
         <form action="#" method="post" class="recall-form">
           <fieldset class="recall-form__block recall-form__block--name">
-            <legend class="recall-form__title">Представтесь:</legend>
+            <legend class="recall-form__title recall-form__title--name">Представтесь:</legend>
             <p class="input-text recall-form__input input-text--row">
               <label for="name" class="input-text__label">Имя<sup>*</sup>:</label>
               <input type="text" class="input-text__field" name="name" id="name" placeholder="Петр" required>
@@ -63,14 +63,16 @@
           </fieldset>
           <fieldset class="recall-form__block recall-form__block--contacts">
             <legend class="recall-form__title">Контактная информация:</legend>
-            <p class="input-text recall-form__input recall-form__input--phone input-text--col">
-              <label for="phone" class="input-text__label">Контактный телефон<sup>*</sup>:</label>
-              <input type="tel" class="input-text__field" name="phone" id="phone" placeholder="Введите телефон" required>
-            </p>
-            <p class="input-text recall-form__input recall-form__input--email input-text--col">
-              <label for="email" class="input-text__label">Электронная почта<sup>*</sup>:</label>
-              <input type="email" class="input-text__field input-text__field--email" name="email" id="email" placeholder="Введите e-mail" required>
-            </p>
+            <div class="recall-form__wrapper">
+              <p class="input-text recall-form__input recall-form__input--phone">
+                <label for="phone" class="input-text__label"><span class="recall-form__label">Контактный</span> телефон<sup>*</sup>:</label>
+                <input type="tel" class="input-text__field" name="phone" id="phone" placeholder="Введите телефон" required>
+              </p>
+              <p class="input-text recall-form__input recall-form__input--email">
+                <label for="email" class="input-text__label">Электронная почта<sup>*</sup>:</label>
+                <input type="email" class="input-text__field input-text__field--email" name="email" id="email" placeholder="Введите e-mail" required>
+              </p>
+            </div>
           </fieldset>
           <fieldset class="recall-form__block recall-form__block--impress">
             <legend class="recall-form__title">Ваше общее впечатление:</legend>
@@ -163,6 +165,24 @@
         </div>
       </footer>
     </div>
+
+    <section class="failure-popup">
+      <h2 class="failure-popup__title">Что-то пошло не так!</h2>
+      <p class="failure-popup__text">
+        Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+      </p>
+      <button class="button failure-popup__button" type="button">Ок</button>
+    </section>
+
+    <section class="success-popup">
+      <h2 class="success-popup__title">Ваш отзыв отправлен!</h2>
+      <p class="success-popup__text">
+        Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
+      </p>
+      <div class="success-popup__wrapper">
+        <button class="button success-popup__button" type="button">Закрыть окно</button>
+      </div>
+    </section>
 
     <script src="js/navigation.js"></script>
   </body>

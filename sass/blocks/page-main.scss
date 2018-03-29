@@ -52,6 +52,7 @@
 
   &--small {
     max-width: 440px;
+    margin-bottom: 42px;
   }
 }
 
@@ -63,6 +64,7 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+  color: #000000;
 }
 
 .page-main__text {
@@ -117,6 +119,10 @@
 
   .page-main__header {
     margin-bottom: 50px;
+
+    &--small {
+      margin-bottom: 60px;
+    }
   }
 
   .page-main__title {
@@ -135,5 +141,18 @@
 @media (min-width: $desktop-width) {
   .page-main__intro {
     background-image: url("../img/sedona-desktop.jpg");
+  }
+
+  .page-main__intro--inner {
+    min-height: 300px;
+    margin-bottom: 105px;
+
+    .page-main__text-image {
+      margin-top: 100px;
+    }
+  }
+
+  .page-main__header--small {
+    margin-bottom: 70px;
   }
 }

@@ -1,19 +1,7 @@
-.input-text {
-  display: flex;
-  justify-content: flex-start;
-
-  &--row {
-    flex-direction: row;
-    align-items: center;
-  }
-
-  &--col {
-    flex-direction: column;
-  }
-}
-
 .input-text__label {
   margin-right: 15px;
+
+  color: $text-color;
   text-transform: uppercase;
 }
 
