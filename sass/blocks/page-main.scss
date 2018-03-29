@@ -49,6 +49,11 @@
   margin-bottom: 10px;
 
   text-align: center;
+
+  &--small {
+    max-width: 440px;
+    margin-bottom: 42px;
+  }
 }
 
 .page-main__title {
@@ -59,6 +64,7 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+  color: #000000;
 }
 
 .page-main__text {
@@ -113,10 +119,18 @@
 
   .page-main__header {
     margin-bottom: 50px;
+
+    &--small {
+      margin-bottom: 60px;
+    }
   }
 
   .page-main__title {
-    font-size: 21px;
+    font-size: 30px;
+
+    &--small {
+      font-size: 21px;
+    }
   }
 
   .page-main__reasons {
@@ -127,5 +141,18 @@
 @media (min-width: $desktop-width) {
   .page-main__intro {
     background-image: url("../img/sedona-desktop.jpg");
+  }
+
+  .page-main__intro--inner {
+    min-height: 300px;
+    margin-bottom: 105px;
+
+    .page-main__text-image {
+      margin-top: 100px;
+    }
+  }
+
+  .page-main__header--small {
+    margin-bottom: 70px;
   }
 }

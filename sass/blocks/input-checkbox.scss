@@ -2,8 +2,22 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+  color: #000000;
 
   cursor: pointer;
+
+  &:hover .input-checkbox__control,
+  &:focus .input-checkbox__control {
+    background-color: $input-background-hover;
+  }
+
+  &:active .input-checkbox__control {
+    background-color: $input-background-active;
+
+    .input-checkbox__control::before {
+      opacity: 0.3;
+    }
+  }
 }
 
 .input-checkbox__control {
@@ -40,3 +54,30 @@
 input[type="checkbox"]:checked ~ .input-checkbox__control::before {
   display: block;
 }
+
+input[type="checkbox"]:focus ~ .input-checkbox__control {
+  background-color: $input-background-hover;
+}
+
+input[type="checkbox"]:active ~ .input-checkbox__control::before {
+  opacity: 0.3;
+}
+
+input[type="checkbox"]:active ~ .input-checkbox__control {
+  background-color: $input-background-active;
+}
+
+// @media (min-width: $tablet-width) {
+//   .input-checkbox {
+//     width: 230px;
+//     margin-bottom: 30px;
+//
+//     &:last-of-type {
+//       margin-bottom: 30px;
+//     }
+//
+//     &:nth-child(2n-1) {
+//       margin-right: auto;
+//     }
+//   }
+// }

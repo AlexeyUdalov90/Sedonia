@@ -21,6 +21,7 @@
 
 @media (min-width: $tablet-width) {
   .page-body__content {
+    margin: 0 auto;
     width: $tablet-width;
   }
 }
