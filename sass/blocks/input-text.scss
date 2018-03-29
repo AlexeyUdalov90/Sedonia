@@ -17,7 +17,7 @@
   font-weight: 700;
 
   background-color: $input-background;
-  border: 0;
+  border: none;
   border-radius: 0;
   box-sizing: border-box;
 
@@ -33,12 +33,10 @@
 
   &:hover {
     background-color: $input-background-hover;
-    // border-color: $input-background-hover;
   }
 
   &:focus {
     background-color: transparent;
-    // border-color: $input-background-active;
     outline: inset 4px solid $input-background-active;
   }
 }

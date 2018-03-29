@@ -869,7 +869,7 @@ img {
   line-height: 26px;
   font-weight: 700;
   background-color: #f2f2f2;
-  border: 0;
+  border: none;
   border-radius: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
