@@ -6,7 +6,7 @@
 }
 
 .input-text__field {
-  padding: 16px 20px;
+  padding: 12px 20px;
   flex-grow: 1;
 
   min-width: 190px;
@@ -17,7 +17,7 @@
   font-weight: 700;
 
   background-color: $input-background;
-  border: none;
+  border: 4px solid $input-background;
   border-radius: 0;
   box-sizing: border-box;
 
@@ -33,11 +33,12 @@
 
   &:hover {
     background-color: $input-background-hover;
+    border-color: $input-background-hover;
   }
 
   &:focus {
     background-color: transparent;
-    box-shadow: inset 0 0 0 4px $input-background-active;
+    border-color: $input-background-active;
     outline: none;
   }
 }
