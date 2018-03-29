@@ -2,13 +2,6 @@
   display: flex;
   justify-content: flex-start;
 
-  margin: 0;
-  width: 280px;
-
-  &:not(:last-of-type) {
-    margin-bottom: 20px;
-  }
-
   &--row {
     flex-direction: row;
     align-items: center;
@@ -20,13 +13,12 @@
 }
 
 .input-text__label {
-  margin-right: 10px;
-  line-height: 26px;
+  margin-right: 15px;
   text-transform: uppercase;
 }
 
 .input-text__field {
-  padding: 15px 20px;
+  padding: 16px 20px;
   flex-grow: 1;
 
   min-width: 190px;

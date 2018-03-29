@@ -63,30 +63,30 @@
           </fieldset>
           <fieldset class="recall-form__block recall-form__block--contacts">
             <legend class="recall-form__title">Контактная информация:</legend>
-            <p class="input-text recall-form__input input-text--col">
+            <p class="input-text recall-form__input recall-form__input--phone input-text--col">
               <label for="phone" class="input-text__label">Контактный телефон<sup>*</sup>:</label>
-              <input type="tel" class="input-text__field input-text__field--phone" name="phone" id="phone" placeholder="Введите телефон" required>
+              <input type="tel" class="input-text__field" name="phone" id="phone" placeholder="Введите телефон" required>
             </p>
-            <p class="input-text recall-form__input input-text--col">
+            <p class="input-text recall-form__input recall-form__input--email input-text--col">
               <label for="email" class="input-text__label">Электронная почта<sup>*</sup>:</label>
               <input type="email" class="input-text__field input-text__field--email" name="email" id="email" placeholder="Введите e-mail" required>
             </p>
           </fieldset>
           <fieldset class="recall-form__block recall-form__block--impress">
             <legend class="recall-form__title">Ваше общее впечатление:</legend>
-            <p class="input-radio">
+            <p class="input-radio recall-form__radio">
               <label class="input-radio__label">
                 <input type="radio" class="visually-hidden" name="rating" value="2" checked>
                 <span class="input-radio__control"></span>Скорее положительное
               </label>
             </p>
-            <p class="input-radio">
+            <p class="input-radio recall-form__radio">
               <label class="input-radio__label">
                 <input type="radio" class="visually-hidden" name="rating" value="1">
                 <span class="input-radio__control"></span>Скорее отрицательное
               </label>
             </p>
-            <p class="input-radio">
+            <p class="input-radio recall-form__radio">
               <label class="input-radio__label">
                 <input type="radio" class="visually-hidden" name="rating" value="0">
                 <span class="input-radio__control"></span>Затрудняюсь ответить
@@ -95,40 +95,42 @@
           </fieldset>
           <fieldset class="recall-form__block recall-form__block--sights">
             <legend class="recall-form__title">Посещенные достопримечательности:</legend>
-            <p class="input-checkbox">
-              <label class="input-checkbox__label">
-                <input type="checkbox" class="visually-hidden" name="devil-bridge" checked>
-                <span class="input-checkbox__control"></span>Мост Дьявола
-              </label>
-            </p>
-            <p class="input-checkbox">
-              <label class="input-checkbox__label">
-                <input type="checkbox" class="visually-hidden" name="slide-park" checked>
-                <span class="input-checkbox__control"></span>Слайд-парк
-              </label>
-            </p>
-            <p class="input-checkbox">
-              <label class="input-checkbox__label">
-                <input type="checkbox" class="visually-hidden" name="mountain-bell">
-                <span class="input-checkbox__control"></span>Гора-Колокол
-              </label>
-            </p>
-            <p class="input-checkbox">
-              <label class="input-checkbox__label">
-                <input type="checkbox" class="visually-hidden" name="red-sliffs" checked>
-                <span class="input-checkbox__control"></span>Красные скалы
-              </label>
-            </p>
+            <div class="recall-form__wrapper">
+              <p class="input-checkbox recall-form__checkbox">
+                <label class="input-checkbox__label">
+                  <input type="checkbox" class="visually-hidden" name="devil-bridge" checked>
+                  <span class="input-checkbox__control"></span>Мост Дьявола
+                </label>
+              </p>
+              <p class="input-checkbox recall-form__checkbox">
+                <label class="input-checkbox__label">
+                  <input type="checkbox" class="visually-hidden" name="slide-park" checked>
+                  <span class="input-checkbox__control"></span>Слайд-парк
+                </label>
+              </p>
+              <p class="input-checkbox recall-form__checkbox">
+                <label class="input-checkbox__label">
+                  <input type="checkbox" class="visually-hidden" name="mountain-bell">
+                  <span class="input-checkbox__control"></span>Гора-Колокол
+                </label>
+              </p>
+              <p class="input-checkbox recall-form__checkbox">
+                <label class="input-checkbox__label">
+                  <input type="checkbox" class="visually-hidden" name="red-sliffs" checked>
+                  <span class="input-checkbox__control"></span>Красные скалы
+                </label>
+              </p>
+            </div>
           </fieldset>
           <fieldset class="recall-form__block recall-form__block--emotions">
             <legend class="recall-form__title">Опишите свои эмоции:</legend>
-            <p class="input-text">
+            <p class="input-text recall-form__textarea">
               <label class="visually-hidden" for="emotions">Ваши эмоции:</label>
               <textarea name="emotions" id="emotions" class="input-text__field input-text__field--textarea" placeholder="Опишите подробно все свои восторги"></textarea>
             </p>
           </fieldset>
           <button class="button recall-form__button" type="submit">Отправить отзыв</button>
-          <small class="recall-form__footnote"><sup>*</sup> - обязательные поля</small>
+          <span class="recall-form__footnote"><sup>*</sup> - обязательные поля</span>
         </form>
       </main>
 

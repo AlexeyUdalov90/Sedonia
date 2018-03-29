@@ -1,10 +1,11 @@
-.input-checkbox {
-  margin: 0;
-
-  &:not(:last-of-type) {
-    margin-bottom: 24px;
-  }
-}
+// .input-checkbox {
+//   margin: 0;
+//   margin-bottom: 24px;
+//
+//   &:last-of-type {
+//     margin-bottom: 0;
+//   }
+// }
 
 .input-checkbox__label {
   font-size: 18px;
@@ -73,3 +74,18 @@ input[type="checkbox"]:active ~ .input-checkbox__control::before {
 input[type="checkbox"]:active ~ .input-checkbox__control {
   background-color: $input-background-active;
 }
+
+// @media (min-width: $tablet-width) {
+//   .input-checkbox {
+//     width: 230px;
+//     margin-bottom: 30px;
+//
+//     &:last-of-type {
+//       margin-bottom: 30px;
+//     }
+//
+//     &:nth-child(2n-1) {
+//       margin-right: auto;
+//     }
+//   }
+// }
