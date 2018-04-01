@@ -143,6 +143,11 @@ img {
     .site-list__item--current .site-list__link:active {
       color: rgba(118, 99, 87, 0.3); } }
 
+@media (min-width: 1200px) {
+  .site-list__image {
+    width: 187px;
+    height: 96px; } }
+
 .main-nav {
   position: relative;
   background-color: #ffffff; }
@@ -341,7 +346,9 @@ img {
     .page-main__intro--inner .page-main__text-image {
       margin-top: 100px; }
   .page-main__header--small {
-    margin-bottom: 70px; } }
+    margin-bottom: 70px; }
+  .page-main__map img {
+    width: 1200px; } }
 
 .reasons__list {
   margin: 0;
@@ -557,7 +564,13 @@ img {
     .advantages-list__item:nth-child(2) {
       -webkit-box-ordinal-group: 2;
           -ms-flex-order: 1;
-              order: 1; } }
+              order: 1; }
+    .advantages-list__item--housing::before {
+      background-image: url("../img/icon-house-big.svg"); }
+    .advantages-list__item--souvenirs::before {
+      background-image: url("../img/icon-present-big.svg"); }
+    .advantages-list__item--foods::before {
+      background-image: url("../img/icon-burger-big.svg"); } }
 
 @media (min-width: 1200px) {
   .advantages-list__item {

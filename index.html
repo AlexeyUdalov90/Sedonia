@@ -26,7 +26,10 @@
             </li>
             <li class="site-list__item site-list__item--logo">
               <a class="site-list__link site-list__link--logo">
-                <img src="img/logo-mobile.svg" alt="Седона" class="site-list__image" width="102" height="83">
+                <picture>
+                  <source media="(max-width:1199px)" srcset="img/logo-mobile.svg">
+                  <img src="img/logo-desktop.svg" alt="Седона" class="site-list__image" width="187" height="96">
+                </picture>
               </a>
             </li>
           </ul>
@@ -54,7 +57,10 @@
                 <p class="reasons__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
               <div class="reasons__image-block">
-                <img src="img/photo-city@1x.jpg" class="reasons__image" alt="Седона" width="512" height="256">
+                <picture>
+                  <source media="(max-width:1199px)" srcset="img/photo-city-mobile.jpg">
+                  <img src="img/photo-city-desktop.jpg" class="reasons__image" alt="Седона" width="800" height="400">
+                </picture>
               </div>
             </li>
             <li class="reasons__item reasons__item--text-and-img">
@@ -64,7 +70,10 @@
                 <p class="reasons__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
               <div class="reasons__image-block">
-                <img src="img/photo-bridge@1x.jpg" class="reasons__image" alt="Мост дьявола" width="512" height="256">
+                <picture>
+                  <source media="(max-width:1199px)" srcset="img/photo-bridge-mobile.jpg">
+                  <img src="img/photo-bridge-desktop.jpg" class="reasons__image" alt="Мост дьявола" width="800" height="400">
+                </picture>
               </div>
             </li>
             <li class="reasons__item reasons__item--underline">
@@ -114,7 +123,10 @@
 
         <div class="page-main__map">
           <h2 class="visually-hidden">Седона на карте</h2>
-          <img src="img/map-mobile.png" alt="Седона на карте" width="768" height="350">
+          <picture>
+            <source media="(max-width:1199px)" srcset="img/map-mobile.jpg">
+            <img src="img/map-desktop.jpg" alt="Седона на карте" width="1200" height="350">
+          </picture>
         </div>
       </main>
 

@@ -87,6 +87,18 @@
     &:nth-child(2) {
       order: 1;
     }
+
+    &--housing::before {
+      background-image: url("../img/icon-house-big.svg");
+    }
+
+    &--souvenirs::before {
+      background-image: url("../img/icon-present-big.svg");
+    }
+
+    &--foods::before {
+      background-image: url("../img/icon-burger-big.svg");
+    }
   }
 }
 
