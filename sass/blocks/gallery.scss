@@ -26,10 +26,38 @@
 
     border: none;
   }
+
+  @supports (display: grid) {
+    .gallery__list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, minmax(267px, auto));
+      grid-auto-rows: minmax(267px, auto);
+    }
+
+    .gallery-list__item {
+      &--big {
+        grid-column: 1 / 3;
+      }
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
   .gallery__list {
     padding: 0;
+  }
+
+  @supports (display: grid) {
+    .gallery__list {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, minmax(267px, auto));
+    }
+
+    .gallery-list__item {
+      &--big {
+        grid-column: 1 / 4;
+      }
+    }
   }
 }
