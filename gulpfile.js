@@ -9,6 +9,7 @@ var server = require('browser-sync').create();
 var minify = require('gulp-csso');
 var rename = require('gulp-rename');
 var imagemin = require('gulp-imagemin');
+var svgstore = require('gulp-svgstore');
 
 gulp.task('style', function () {
   gulp.src('sass/style.scss')
@@ -16,10 +17,10 @@ gulp.task('style', function () {
       .pipe(sass())
       .pipe(postcss([autoprefixer()]))
       .pipe(gulp.dest('css'))
-      .pipe(server.stream())
       .pipe(minify())
       .pipe(rename('style.min.css'))
-      .pipe(gulp.dest('css'));
+      .pipe(gulp.dest('css'))
+      .pipe(server.stream());
 });
 
 gulp.task('images', function () {
@@ -29,6 +30,15 @@ gulp.task('images', function () {
         imagemin.jpegtran({progressive: true}),
         imagemin.svgo()
       ]))
+      .pipe(gulp.dest('img'));
+});
+
+gulp.task('sprite', function () {
+  return gulp.src('img/*-icon.svg')
+      .pipe(svgstore({
+        inlineSvg: true
+      }))
+      .pipe(rename('sprite.svg'))
       .pipe(gulp.dest('img'));
 });
 
