@@ -54,6 +54,11 @@
     max-width: 440px;
     margin-bottom: 42px;
   }
+
+  &--photo {
+    max-width: 440px;
+    margin-bottom: 25px;
+  }
 }
 
 .page-main__title {
@@ -122,6 +127,10 @@
 
     &--small {
       margin-bottom: 60px;
+    }
+
+    &--photo {
+      margin-bottom: 70px;
     }
   }
 
